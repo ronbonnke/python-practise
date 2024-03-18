@@ -106,3 +106,72 @@ print(x.upper())
 print(x.lower())
 
 print(x.split())
+
+# more eg's for split method()
+x =  "I love Python programming"
+print(x.split())
+
+
+
+# try concat(+) again
+name = "Ron"
+print("My name is",name)
+print("My name is "+ name)
+
+# formatting
+# use single quotes 
+print('This is a string {}'.format('INSERTED'))
+
+
+
+
+# The number inside the braces are index values
+print('There are {1}, {0}, {2} in the jungle'.format('fox','lion','tiger'))
+
+print('There are {1}, {1}, {1} in the jungle'.format('fox','lion','tiger'))
+
+print('There are {1}, {2}, {0} in the jungle'.format('fox','lion','tiger'))
+
+
+
+
+# eg using literals  or
+#  . dot format method 
+print('There are {f}, {t}, {l} in the jungle'.format(f='fox',l='lion',t='tiger'))
+
+print('There are {f}, {f}, {f} in the jungle'.format(f='fox',l='lion',t='tiger'))
+
+
+# float formatting
+result = 100/777
+print(result)
+print("The result was {}".format(result))
+# or
+print("The result was {r}".format(r=result))
+
+
+#floatFormatting "{value:width.precision f}"
+print("The result was {r:1.3f}".format(r=result))
+
+# width inside it (creates a white space)
+print("The result was {r:10.5f}".format(r=result))
+
+# passing the formatting through the f letter inside {}   here we are using literals 
+name = "Ron"
+print(f"Hello, My name is {name}")
+
+# eg1 
+name = "Ron"
+age = 21
+print(f"{name} is {age} years old.")
+
+my_list = [1,2,3]
+my_list = ['string', 200, 50.46]
+print(len(my_list))
+print(my_list[1:])
+
+another_list = ['box',5]
+
+new_list = my_list + another_list
+print(new_list)
+
