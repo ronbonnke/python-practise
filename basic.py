@@ -165,13 +165,85 @@ name = "Ron"
 age = 21
 print(f"{name} is {age} years old.")
 
+
+
+# LIST
+
 my_list = [1,2,3]
 my_list = ['string', 200, 50.46]
 print(len(my_list))
 print(my_list[1:])
 
-another_list = ['box',5]
 
+another_list = ['box',5]
 new_list = my_list + another_list
 print(new_list)
+new_list[0] = 'Bonnke'
+print(new_list)
+new_list[4] = 'lcar'
+print(new_list)
 
+
+# append helps you to add a element in the end of the list
+new_list.append(25)
+print(new_list)
+
+new_list.append("hey yoo")
+print(new_list)
+
+
+
+
+#  pop is used to remove the last element from the list
+
+# pops the element and doesn't return
+new_list.pop()
+print(new_list)
+# returns the popped element
+print(new_list.pop())
+print(new_list)
+
+
+
+new_list = ['u', 'o', 'a', 'i', 'e']
+num_list = [4,2,8,3]
+
+new_list.sort()
+print(new_list)
+
+
+num_list.sort()
+print(num_list)
+# or
+num_list.sort()
+my_sorted_list = num_list
+print(my_sorted_list)
+
+num_list.reverse()
+print(num_list)
+
+
+
+# DICTIONARY
+
+my_dict = {'key1':'value1','key2':'value2',}
+my_dict['key1']
+print(my_dict['key1'])
+
+# example 1
+price = {'apple':2.89,'banana':5}
+print(price['apple'])
+
+# example 2
+d = {'k1':20,'k2':[0,1,2],'k3':{'insideKey':100}}
+
+print(d['k1'])
+
+print(d['k2'])
+
+# here im  accessing inside key of k3 using its index
+print(d['k2'][2])
+
+print(d['k3'])
+
+print(d['k3']['insideKey'])
