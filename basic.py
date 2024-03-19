@@ -241,9 +241,109 @@ print(d['k1'])
 
 print(d['k2'])
 
+
 # here im  accessing inside key of k3 using its index
 print(d['k2'][2])
 
 print(d['k3'])
 
 print(d['k3']['insideKey'])
+
+
+# This is the example for  how to add new items in dictionary
+list = ['a','b','c']
+letter = list[0].upper()
+print(letter)
+
+# This is also example for  adding a new item into dictionary
+d = {'k1':100, 'k2':200}
+d['k3'] = 300
+print(d)
+
+# re assigning
+d['k1']=720
+d['k2']=456
+d['k3']='HEY'
+print(d)
+
+# if you want the old dictionary value
+d = {'k1': 100, 'k2': 200, 'k3': 300}
+print(d)
+
+# To return keys  from dictionary
+print(d.keys())
+
+#  To return values 
+print(d.values())
+
+#  This  will give both keys and values in parenthesis
+print(d.items())
+
+
+# you can check the   typeOf   here
+tups = (1,2,3)
+list = [1,2,3]
+print(type(tups))
+print(type(list))
+
+# To count 
+tups = ('a', 'b', 'c', 'a', 'a')
+print(tups.count('a'))
+
+
+#  List can replace and take place inside a list
+list[0] = 'NEW'
+print(list)
+
+# ( Tuple cannot  be replaced or taken place inside tuple  /  IT DOESN'T NOT SUPPORT ITEM ASSIGNMENT
+
+# tups[0] = 'z'
+# print(tups)
+# ///////////
+
+#  SETS
+mySet = set()
+print(mySet)  #returns empty set
+
+
+
+# add a set
+mySet.add(8)
+print(mySet)
+# output may look like dictionaries but it's not be'cos they dont have key value pairs 😂😂
+
+
+
+# you can continue adding your set but same numbers cannot be added
+
+# set must have unique value's so we cannot add same numbers or repeat them
+mySet.add(2)
+mySet.add(9)
+mySet.add(4)
+print(mySet)
+
+# keep in mind sets take only unique value
+# use set() method
+my_list = [1,1,1,2,2,6,4,4,6,2]
+print(set(my_list))
+
+
+# example from Udemy academy
+Mississippi = ['M','i','s','s','i','s','s','i','p','p','i']
+print(set('Mississippi'))
+
+
+print(set((1,1,2,3)))
+
+#  BOOLEANS
+
+print(type(False))
+
+
+# checking true or fale bool conditions
+check = 1 > 2
+print(check)
+
+check = 1 == 1
+print(check)
+
