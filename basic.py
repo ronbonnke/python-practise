@@ -347,3 +347,93 @@ print(check)
 check = 1 == 1
 print(check)
 
+print((60+(10 ** 2) / 4 * 7) - 134.75)
+
+4*(6+5)
+4*6+5
+4+6*5
+
+# square root
+100 ** 0.5
+
+# reverse using slicing
+s = 'hello'
+print(s[::-1])
+
+
+[0]*3     # print in terminal and check this
+
+
+
+#  Comparisons [booleans]
+
+1 == 2
+1<2<3
+1<2>3
+1 == 2 and 20 != 10
+12 >= 14 or 20 <= 25
+
+# conditions with if else statements
+
+if True:
+    print("its true")
+
+if 3>2:
+    print("I'ts True")
+
+
+# eg1
+hungry = True
+if hungry:
+    print("feed me")
+
+
+
+
+# eg2 using if
+if hungry == True:
+    print("feed me")
+else:
+    print("I'm not hungry")
+
+# eg2 using if and else
+hungry = False
+if hungry:
+    print("feed me")
+else:
+    print("I'm not hungry")
+
+
+# eg3 using elif
+
+loc = 'bank'
+if loc == "super market":
+    print("buy groceries")
+elif loc == "bank":
+    print("withdraw money")
+else:
+    print("stay home")
+
+
+
+loc = 'super market'
+if loc == "super market":
+    print("buy groceries")
+elif loc == "bank":
+    print("withdraw money")
+else:
+    print("stay home")
+
+
+loc = 'hill station'
+if loc == "super market":
+    print("buy groceries")
+elif loc == "bank":
+    print("withdraw money")
+else:
+    print("stay home")
+
+
+
+#  eg 4
+
