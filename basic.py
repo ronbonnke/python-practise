@@ -535,3 +535,40 @@ for (a,b) in myList:
 for a,b in myList:
     print(a)
     print(b)
+
+
+# let's print tuple items again
+myList = [(1,6,7),(2,2,4)]
+for a,b,c in myList:
+    print(a)
+    print(b)
+    print(c)
+
+
+
+#  for loop through dictionaries
+d = {'k1':1,'k2':2,'k3':3}
+for item in d:
+    print(item)
+
+d = {'k1':1,'k2':2,'k3':3}
+for key in d.items():
+    print(key)
+
+
+
+# print separately
+d = {'k1':1,'k2':2,'k3':3}
+for key,value in d.items():
+    print(key)
+
+
+d = {'k1':1,'k2':2,'k3':3}
+for key,value in d.items():
+    print(value)
+    # or
+d = {'k1':1,'k2':2,'k3':3}
+for value in d.values():
+    print(value)
+
+
