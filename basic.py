@@ -437,3 +437,20 @@ else:
 
 #  eg 4
 
+name = 'ron'
+if name == 'sammy':
+    print("small boy sammy")
+elif name == 'franky':
+    print("hello franky")
+else :
+    print("I don't know you")
+
+
+#  Iterable
+#  LOOPS
+#  { in } is a keyword which gives the elements of iterables.
+numbers = [1,2,3]
+for item in numbers:
+    print(item)
+
+
