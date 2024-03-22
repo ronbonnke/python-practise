@@ -448,9 +448,90 @@ else :
 
 #  Iterable
 #  LOOPS
-#  { in } is a keyword which gives the elements of iterables.
+#  { in } is a keyword which gives the elements inside iterables.
 numbers = [1,2,3]
 for item in numbers:
     print(item)
 
+# eg 1
+myList = [1,2,3,4,5,6,7,8,9,10]
+for elements in myList:
+    print(elements)
 
+# see the diff
+myList = [1,2,3,4,5,6,7,8]
+for element in myList:
+    print("hello")
+
+
+
+# eg2
+# printing even nums
+for element in myList:
+    if element % 2 == 0:
+        print(element)
+    else:
+        print("odds no. :",element)
+
+# there's one more way
+for element in myList:
+    if element % 2 == 0:
+        print(element)
+    else:
+        print(f'odd num: {element}')
+
+# eg
+# see print line 
+myList = [1,2,3,4,5,6,7,8]
+listSum = 0
+for num in myList:
+    listSum = listSum + num
+print("sum of all ele: ",listSum)
+
+# eg for IndentationError space
+#  see print line
+myList = [1,2,3,4,5,6,7,8]
+listSum = 0
+for num in myList:
+    listSum = listSum + num
+    print("sum of all ele: ",listSum)
+
+# string printing
+myString = "Hello World"
+for letter in myString:
+    print(letter)
+
+# string printing
+for letter in "Hello World":
+    print(letter)
+
+# to print anything we wish
+for letter in "Python is fun":
+    print("python")
+
+tup = (67,12,33)
+for item in tup:
+    print(item)
+
+
+# let's print the items inside tuples
+myList = [(1,2),(3,4),(5,6),(7,8)]
+print(len(myList))
+for item in myList:
+    print(item)
+
+
+# new eg
+for (a,b) in myList:
+    print(a)
+    print(b)
+
+# new eg
+for (a,b) in myList:
+    print(a)
+
+
+# new eg this print separate separately
+for a,b in myList:
+    print(a)
+    print(b)
