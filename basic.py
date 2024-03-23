@@ -700,8 +700,71 @@ print(list)
 from random import randint
 print(randint(0,1000),"k likes")
 
+
+
 # let's learn about inputting numbers
 
+# res = input('Enter a number : ')
+# print(res)
 
-res = input('Enter a number : ')
-print(res)
+
+# type cast it
+# this is  how we convert string to int
+
+# res = int(input('Favorite number: '))
+# print(res)
+# int(res)
+# print(type(res))
+
+
+myString ='hello'
+mylist = []
+for letter in myString:
+    mylist.append(letter)
+print(mylist)
+
+
+mylist = [letter for letter in myString]
+print(mylist)
+
+# eg list
+list = [vghvgxzqyqtdygg for vghvgxzqyqtdygg in 'word']
+print(list)
+
+list = [dfjbhnkm for dfjbhnkm in 'word']
+print(list)
+
+# eg using range
+mylist = [x for x in range(0,11)]
+print(mylist)
+
+# printing square roots
+mylist = [x**2 for x in range(0,11)]
+print(mylist)
+
+# printing cube roots
+mylist = [x**3 for x in range(0,11)]
+print(mylist)
+
+# even numbers
+mylist = [x for x in range(0,11) if x%2==0]
+print(mylist)
+
+# celsius to fahrenheit
+
+celsius = [7,11,16,40.5,20]
+fahrenheit = [((9/5)*temp + 32) for temp in celsius]
+print(fahrenheit)
+
+
+# methods and function
+list = [1,2,3]
+print(list)
+help(list.insert)
+
+
+# add func()
+def add(num1, num2):
+    return (num1+num2)
+result = add(5,8)
+print("The result is: ", result)
