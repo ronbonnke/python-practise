@@ -572,3 +572,23 @@ for value in d.values():
     print(value)
 
 
+# while , do while
+
+x = 0
+while x < 5 :
+    print(f'The current value of x is {x}')
+    x = x + 1
+
+x = 0
+while x < 5 :
+    print("The current value of x is  ", x)
+    x += 1
+
+
+# key words
+#  break, continue, pass
+
+x = [1,2,3]
+
+for item in x:
+    # comment
