@@ -585,10 +585,123 @@ while x < 5 :
     x += 1
 
 
+
+
+
+
 # key words
 #  break, continue, pass
 
 x = [1,2,3]
-
 for item in x:
     # comment
+    pass  #pass keyword does nothing at all
+print('end of my script')
+
+
+
+
+
+#  closest enclosing loop
+#  continue key word
+
+# it continues after the meeting the condition
+myString = 'bonnke'
+
+for letter in myString:
+    if letter == 'o':
+        continue
+    print(letter)
+
+
+#  BREAK
+# it breaks after the meeting the condition
+
+# eg01
+myString = 'bonnke'
+
+for letter in myString:
+    if letter == 'o':
+        break
+    print(letter)
+
+# eg02
+x = 0
+while x < 5:
+    if x == 2:
+        break
+    print(x)
+    x += 1
+
+
+
+
+#  OPERATORS
+
+# range functions
+#   syntax : range([start[,stop[,step]]])
+
+
+
+# it print from 3 and goes upto 10  but not including 10.
+for num in range(3,10):
+    print(num)
+
+# printing even numbers using range
+for num in range(0,10,2):
+    print(num)
+# or
+# print(list(range(0,11,2)))
+
+index = 0
+for letter in 'abcde':
+    print('index {} letter is {}'.format(index, letter))
+    index += 1
+
+# enumerate
+index = 0
+word = 'abcde'
+for item in enumerate(word):
+    print(item)
+
+index = 0
+word = 'abcde'
+for index,letter in enumerate(word):
+    print(index)
+    print(letter)
+    print('\n')
+
+
+
+# ZIP
+
+mylist1 = [1,2,3]
+mylist2 = ['a','b','c']
+for item in zip(mylist1, mylist2):
+    print(item)
+
+# eg2
+mylist1 = [1,2,3]
+mylist2 = ['a','b','c']
+mylist3 = [200,500,700]
+for item in zip(mylist1, mylist2, mylist3):
+    print(item)
+
+
+# importing shuffle func
+from random import shuffle
+list = [1,2,3,4,5,6,7]
+shuffle(list)
+print(list)
+
+
+# import random integer
+# printing random numbers
+from random import randint
+print(randint(0,1000),"k likes")
+
+# let's learn about inputting numbers
+
+
+res = input('Enter a number : ')
+print(res)
