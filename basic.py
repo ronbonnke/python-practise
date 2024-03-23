@@ -766,5 +766,5 @@ help(list.insert)
 # add func()
 def add(num1, num2):
     return (num1+num2)
-result = add(5,8)
+result = add(15,8)
 print("The result is: ", result)
