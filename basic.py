@@ -827,3 +827,102 @@ def sum_numbers(num1,num2):
 print(sum_numbers(10,20))
 # concats it
 print(sum_numbers('10','20'))
+
+
+
+# MODS / MODULO operator
+2%2
+3%2
+41%40
+# you can check like this
+20%2 == 0 #True
+21%2 == 0 #False
+
+
+# example1
+def even_check(num):
+    res = num % 2 == 0
+    return res
+print(even_check(20)) # True
+
+def even_check(num):
+    return num % 2 == 0
+print(even_check(23))  # False
+
+#  RETURN TRUE IF ANY NUM IS EVEN INSIDE A [LIST]
+
+def check_even_list(num_list):
+    for num in num_list:
+        if num % 2 == 0:
+            return True
+        else:
+            pass
+    return False
+
+print(check_even_list([1,3,5])) #none becos its odd number
+
+print(check_even_list([1,4,5])) #True becos list has a even number inside it
+
+
+
+
+# return all even numbers
+def get_evens(lst):
+    # place holder variables
+    evens = []
+    for i in lst:
+        if i % 2 == 0:
+            evens.append(i)
+        else:
+            pass
+    return evens
+print(get_evens([1,2,4,5,6]))  #returns even numbers
+print(get_evens([1,3,9,5,])) #no even num so it will give empty
+
+
+
+
+# TUPLE unpacking
+
+# eg1
+stock = [('Apples',150),('Grapes',80),( 'Bananas' ,70)]
+for item in stock:
+    print(item)
+    # print and see separate separately
+for ticker,price in stock:
+    print(price)
+for ticker,price in stock:
+    print(ticker)
+    
+
+# eg2 unpacking tuples
+work_hours = [('Ron',1000),('billy',400), ('vaani',800)]
+def emp_check(work_hours):
+    current = 0
+    empofmonth = ''
+    
+    for emp, hours in work_hours:
+        if hours > current:
+            current = hours
+            empofmonth = emp
+        else:
+            pass
+    return (empofmonth,current)
+
+print(emp_check(work_hours))    # returns tuple of employee who worked more 
+
+# or
+
+result = emp_check(work_hours)
+print(result)
+
+# checking both separetly
+name,hours = emp_check(work_hours)
+print(name)
+print(hours)
+
+
+
+
+#  INTERACTIONS
+
