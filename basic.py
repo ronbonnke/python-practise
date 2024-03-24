@@ -768,3 +768,62 @@ def add(num1, num2):
     return (num1+num2)
 result = add(15,8)
 print("The result is: ", result)
+
+
+# list comprehension with a method
+def hello():
+    print( "Hello World!")
+# call the function
+hello()
+
+
+def hello():
+    print( "Hello World!")
+    print( "Hello World!")
+# call the function
+hello()
+
+
+
+# parameterized
+def hello(name):
+    print(f'hello {name}')
+hello('Ron')
+
+
+# default
+def hello(name = "default"):
+    print(f'hello {name}')
+hello()
+
+def sum(n1,n2):
+    print(n1+n2)
+sum(20,10)
+
+def add(num1, num2):
+    return (num1+num2)
+result = add(15,8)
+print("The result is: ", result)
+
+def sum(a,b):
+    print(a+b)
+sum(20,50)
+
+
+def return_res(a,b):
+    return a+b
+res = return_res(30,70)
+print(res)
+
+def func(a,b):
+    print(a+b)
+    return a+b
+res = func(10,50)
+
+
+#  this another way of writing
+def sum_numbers(num1,num2):
+    return num1+num2
+print(sum_numbers(10,20))
+# concats it
+print(sum_numbers('10','20'))
