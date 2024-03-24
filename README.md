@@ -10,8 +10,3 @@ This repository contains simple Python code snippets that demonstrate various ba
 # Print statements
 print("hello world")
 print('Welcome to python: The world of real snakes')
-print("3 + 6:", 3 + 6)
-print("3 / 6:", 3 / 6)
-print("3 * 6:", 3 * 6)
-print("3 - 6:", 3 - 6)
-print("3 % 6:", 3 % 6)
