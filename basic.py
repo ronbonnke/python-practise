@@ -926,3 +926,21 @@ print(hours)
 
 #  INTERACTIONS
 
+# shuffle
+example = [1,2,3,4,5,6]
+from random import shuffle
+result = shuffle(example)
+print(result)
+
+def shuffle_list(mylist):
+    shuffle(mylist)
+    return mylist
+result = shuffle_list(example)
+print(result)
+
+# let's shuffle empty strings
+list = [' ','O',' ']
+print("list",shuffle_list(list))
+
+
+
