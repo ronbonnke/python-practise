@@ -65,3 +65,24 @@ def makes_twenty(n1,n2):
     else:
         return False
 print("checking =",makes_twenty(8,11))
+
+
+
+ 
+# few examples for  functions
+def old(name):
+    first = name[0]
+    inbetween = name[1:2]
+    third = name[2]
+    rest = name[3:]
+    return first.upper() + inbetween + third.upper()  + rest
+print(old('mcdonald'))
+
+
+# same eg short code
+def old(name):
+    first_half = name[:2]
+    second_half = name[2:]
+    return first_half.capitalize() + second_half.capitalize()
+print(old('mcdonald'))
+
