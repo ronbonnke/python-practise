@@ -939,8 +939,9 @@ result = shuffle_list(example)
 print(result)
 
 # let's shuffle empty strings
-list = [' ','O',' ']
-print("list",shuffle_list(list))
+listo = [' ','O',' ']
+print("list",shuffle_list(listo))
+
 
 
 
@@ -952,6 +953,49 @@ def is_spy(nums):
         if num == code[0]:
             code.pop(0)
     return len(code) == 1
-is_spy([1,2,4,0,0,7,5])
-is_spy([1,0,2,4,0,5,7])
-is_spy([1,7,2,0,4,5,0])
+print(is_spy([1,2,4,0,0,7,5]))
+print(is_spy([1,0,2,4,0,5,7]))
+print(is_spy([1,7,2,0,4,5,0]))
+
+
+# COUNT PRIME NUMBERS
+
+def count_prime(num):
+    if num  < 2:
+        print(0)
+    primes = [2]
+    x = 3
+    while x <= num:
+        for y in primes:
+            if x%y == 0:
+                x = x+2
+                break
+        else:
+            primes.append(x)
+            x=x+2
+    print(primes)
+    print(len(primes))
+count_prime(103)
+
+
+
+# LAMBDA FUNCTIONS
+# A lambda function is a small anonymous function that we can use to perform simple tasks without the need of defining a full named function
+
+def square(num):
+    return num**2
+my_nums = [1,2,3,4,5]
+for item in map(square, my_nums):
+    print(item)
+
+# my_var = list(map(square, my_nums))
+# print(my_var)
+
+# printing even number of letters containing inside names
+def splicer(mystring):
+    if len(mystring)%2 == 0:
+        return 'EVEN'
+    else:
+        return mystring[0]
+name = ['andrea','molly','dolly']
+print(splicer(name))
