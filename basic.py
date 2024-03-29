@@ -944,3 +944,14 @@ print("list",shuffle_list(list))
 
 
 
+# CHALLENGING PROBLEMS
+# true if it contains 007 order
+def is_spy(nums):
+    code = [0,0,7,'x']
+    for num in nums:
+        if num == code[0]:
+            code.pop(0)
+    return len(code) == 1
+is_spy([1,2,4,0,0,7,5])
+is_spy([1,0,2,4,0,5,7])
+is_spy([1,7,2,0,4,5,0])
