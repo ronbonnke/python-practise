@@ -124,6 +124,5 @@ def func(x):
     x = "NEW VALUE"
     print(f'I locally changed GLOBAL X to {x}')
     return x
-# func(69)
+func(69)
 print(x)
- 
